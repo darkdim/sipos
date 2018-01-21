@@ -36,5 +36,4 @@ class HelloWorldSalutation {
       return $this->t('Good evening world');
     }
   }
-
 }

@@ -29,6 +29,9 @@ class HelloWorldController extends ControllerBase {
     $this->salutation = $salutation;
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('hello_world.salutation')
